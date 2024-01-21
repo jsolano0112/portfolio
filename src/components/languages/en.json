@@ -1,0 +1,50 @@
+{
+    "main": {
+        "title": "Portfolio | Juana Solano",
+        "hi": "Hi, my name is",
+        "subtitle": "W e b   &#160 &#160   P r o g r a m m e r",
+        "experienceTitle": "Career",
+        "projectTitle": "Projects"
+    },
+    "experience": {
+        "solvoandvensure": {
+            "title": "Internship",
+            "name": "Solvo & Vensure",
+            "description": "Worked with the Vensure development team using the Scrum methodology. Our main task was to perform maintenance on VensureHR due to new requirements that were desired to be implemented.",
+            "tech": "MVC ASP.NET, .NET Core, Entity Framework, HTML, Razor, CSS, TypeScript, Angular, .NUnit, Karma & Jasmine, Bootstrap, SQL Server, Jira."
+        },
+        "solvo": {
+            "title": "Inventory IT",
+            "name": "Solvo",
+            "description": "Initiated a web application for Solvo's IT sector. The project involved creating a customized inventory system to consolidate information about equipment loans and employee data in one place. Query management and role assignments were added for more specific functionalities.",
+            "tech": "MVC ASP.NET, Entity Framework, HTML, Razor, CSS, JavaScript, Angular, SQL Server, Jira."
+        },
+        "fedesoft": {
+            "title": "National Programming Contest for Schools 2019",
+            "name": "Fedesoft",
+            "description": "With my school, I participated in this competition, creating a proposal for an Augmented Reality game based on the United Nations Sustainable Development Goals to enhance school coexistence.",
+            "tech": "Blender, Unity, Trello."
+        }
+    },
+    "project": {
+        "appControlGastos": {
+            "title": "App Control de Gastos",
+            "description": "Desktop application to review your monthly expenses.",
+            "image": "src/components/img/appControlGastos.png",
+            "link": "https://github.com/jsolano0112/ControlGastos"
+        },
+        "gusanito": {
+            "title": "El Gusanito",
+            "description": "Desktop application to play the Snake game.",
+            "image": "src/components/img/gusanito.png",
+            "link": "https://github.com/jsolano0112/Gusanito"
+        },
+        "shoppingCart": {
+            "title": "Shopping Cart",
+            "description": "Web application for adding items to the shopping cart.",
+            "image": "src/components/img/shop.PNG",
+            "link": "https://github.com/jsolano0112/shopping-cart-angular"
+        }
+    },
+    "skill": {}
+}

@@ -1,0 +1,77 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { description, title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+		/>
+		<link rel="stylesheet" href="../components/css/LightBulb.css" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="flex flex-col">
+		<Header />
+		<slot />
+		<Footer />
+		<script src="../components/js/script.js"></script>
+	</body>
+</html>
+<style is:global>
+	:root {
+		color: black;
+	}
+
+	html {
+		font-family: system-ui, sans-serif;
+	}
+
+	body {
+		background: #e5e1da;
+		display: flex;
+		justify-content: center;
+		min-height: 100vh;
+	}
+
+	/*section project*/
+
+	@keyframes show {
+		from {
+			opacity: 0;
+			scale: 25%;
+		}
+
+		to {
+			opacity: 1;
+			scale: 100%;
+		}
+	}
+
+	.section-project {
+		view-timeline-name: --image;
+		view-timeline-axis: block;
+		animation-timeline: --image;
+		animation-name: show;
+		animation-range: 25% cover 50%;
+		animation-fill-mode: both;
+	}
+
+	.section-project img {
+		border-radius: 1.4rem;
+	}
+</style>

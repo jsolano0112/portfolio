@@ -1,0 +1,105 @@
+---
+import AngularIcon from "./icons/Angular.astro"
+import JavaIcon from "./icons/Java.astro"
+import PythonIcon from "./icons/Python.astro"
+
+const TAGS = {
+   ANGULAR: {
+      name: "Angular",
+      class: "bg-blue-300 text-black font-semibold items-center",
+      icon: AngularIcon,
+   },
+   JAVA: {
+      name: "Java",
+      class: "bg-blue-300 text-black font-semibold items-center",
+      icon: JavaIcon,
+   },
+   PYTHON: {
+      name: "Python",
+      class: "bg-blue-300 text-black font-semibold items-center",
+      icon: PythonIcon,
+   },
+};
+
+const PROJECTS = [
+   {
+      title: "App Control de Gastos",
+      description:
+         "Es una aplicación de escritorio para revisar tus gastos del mes, hecha con Java.",
+      image: "src/components/img/appControlGastos.png",
+      link: "https://github.com/jsolano0112/ControlGastos",
+      tags: [TAGS.JAVA],
+   },
+   {
+      title: "El Gusanito",
+      description: "Es una aplicación de escritorio para jugar al gusanito.",
+      image: "src/components/img/gusanito.png",
+      link: "https://github.com/jsolano0112/Gusanito",
+      tags: [TAGS.PYTHON],
+   },
+   {
+      title: "Shopping Cart",
+      description: "Es una aplicativo web para agregar artículos al carrito.",
+      image: "src/components/img/shop.PNG",
+      link: "https://github.com/jsolano0112/shopping-cart-angular",
+      tags: [TAGS.ANGULAR],
+   },
+];
+---
+
+<section class="flex flex-col gap-y-16">
+   {
+      PROJECTS.map(({ image, title, description, tags, link }) => (
+         <article class="section-project">
+            <div class="flex flex-row gap-2">
+               <h2 class="text-2xl font-semibold text-black-800 dark:text-black-200 mb-2">
+                  {title}
+               </h2>
+               <a href={link}>
+                  <button>
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-4 hover:size-5"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-external-link"
+                     >
+                        <>
+                           <path d="M15 3h6v6" />
+                           <path d="M10 14 21 3" />
+                           <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        </>
+                     </svg>
+                  </button>
+               </a>
+            </div>
+
+            <p class="text-lg mb-4 text-pretty">{description}</p>
+            <div class="flex flex-row gap-4">
+               <img
+                  loading="lazy"
+                  class="rounded shadow-2xl shadow-white/10 aspect-video size-48"
+                  src={image}
+                  alt={`Captura de pantalla del proyecto ${image}`}
+               />
+               <ul class="flex gap-x-2 flex-row mb-2">
+                  {tags.map((tag) => (
+                     <li>
+                        <span
+                           class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+                        >
+                           <tag.icon />
+                           {tag.name}
+                        </span>
+                     </li>
+                  ))}
+               </ul>
+            </div>
+         </article>
+      ))
+   }
+</section>

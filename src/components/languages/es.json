@@ -1,0 +1,50 @@
+{
+    "main": {
+        "title": "Portafolio | Juana Solano",
+        "hi": "Hola, mi nombre es",
+        "subtitle": "P r o g r a m a d o r   &#160 &#160   W e b",
+        "experienceTitle": "Experiencia",
+        "projectTitle": "Proyectos"
+    },
+    "experience": {
+        "solvoandvensure": {
+            "title": "Práctica empresarial",
+            "name": "Solvo & Vensure",
+            "description": "Trabajé con el equipo de desarrollo de Vensure bajo la metodología Scrum, nuestro principal trabajo fue hacerle un mantenimiento a VensureHR debido a nuevos requerimientos que se le deseaban implementar.",
+            "tech": "MVC ASP.NET, .NET Core, Entity Framework, HTML, Razor, CSS, TypeScript, Angular, .NUnit, Karma & Jasmine, Bootstrap, SQL Server, Jira."
+        },
+        "solvo": {
+            "title": "Inventario IT",
+            "name": "Solvo",
+            "description": "Inicié un aplicativo web para el sector IT de Solvo. El proyecto consistía en hacer un inventario personalizado para tener la información sobre los préstamos de los equipos junto a los datos de los empleados en un solo sitio, se agregó manejo de consultas y roles para funciones más específicas.",
+            "tech": "MVC ASP.NET, Entity Framework, HTML, Razor, CSS, JavaScript, Angular, SQL Server, Jira."
+        },
+        "fedesoft": {
+            "title": "Concurso Nacional de Programación para Escuelas 2019",
+            "name": "Fedesoft",
+            "description": "Con mi colegio participé en este concurso, creando como propuesta un juego de Realidad Aumentada basandonos en los Objetivos de Desarrollo Sostenible de las Naciones Unidas para mejorar la convivencia escolar.  ",
+            "tech": "Blender, Unity, Trello."
+        }
+    },
+    "project": {
+        "appControlGastos": {
+            "title": "App Control de Gastos",
+            "description": "Es una aplicación de escritorio para revisar tus gastos del mes.",
+            "image": "src/components/img/appControlGastos.png",
+            "link": "https://github.com/jsolano0112/ControlGastos"
+        },
+        "gusanito": {
+            "title": "El Gusanito",
+            "description": "Es una aplicación de escritorio para jugar al gusanito.",
+            "image": "src/components/img/gusanito.png",
+            "link": "https://github.com/jsolano0112/Gusanito"
+        },
+        "shoppingCart": {
+            "title": "Shopping Cart",
+            "description": "Es una aplicativo web para agregar artículos al carrito.",
+            "image": "src/components/img/shop.PNG",
+            "link": "https://github.com/jsolano0112/shopping-cart-angular"
+        }
+    },
+    "skill": {}
+}

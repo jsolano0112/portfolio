@@ -1,0 +1,35 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCIE = [
+    {
+        title: 'Práctica empresarial',
+        name: 'Solvo & Vensure',
+        description: 'Trabajé con el equipo de desarrollo de Vensure bajo la metodología Scrum, nuestro principal trabajo fue hacerle un mantenimiento a VensureHR debido a nuevos requerimientos que se le deseaban implementar.',
+        tech:'MVC ASP.NET, .NET Core, Entity Framework, HTML, Razor, CSS, TypeScript, Angular, .NUnit, Karma & Jasmine, Bootstrap, SQL Server, Jira.',
+    },
+    {
+        title: 'Inventario IT',
+        name: 'Solvo',
+        description: 'Inicié un aplicativo web para el sector IT de Solvo. El proyecto consistía en hacer un inventario personalizado para tener la información sobre los préstamos de los equipos junto a los datos de los empleados en un solo sitio, se agregó manejo de consultas y roles para funciones más específicas.',
+        tech:'MVC ASP.NET, Entity Framework, HTML, Razor, CSS, JavaScript, Angular, SQL Server, Jira.',
+    },
+    {
+        title: 'Concurso Nacional de Programación para Escuelas',
+        name: 'Fedesoft',
+        description: 'Con mi colegio participé en este concurso, creando como propuesta un juego de realidad aumentada basandonos en los objetivos de desarrollo sostenible de las naciones unidas para mejorar la convivencia escolar.  ',
+        tech:'Blender, Unity, Trello.',
+    }
+]
+
+---
+
+<ol class="relative border-s border-blue-200 light:border-blue-700">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol> 
