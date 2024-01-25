@@ -5,6 +5,7 @@
         "subtitle": "W e b &#160 &#160 P r o g r a m m e r",
         "experienceTitle": "Career",
         "projectTitle": "Projects",
+        "aboutTitle": "About me",
         "contactFooter": "Contact"
     },
     "experience": {
@@ -47,5 +48,7 @@
             "link": "https://github.com/jsolano0112/shopping-cart-angular"
         }
     },
-    "skill": {}
+    "about": {
+        "description": "Besides dedicating myself to development, I occasionally enjoy painting, reading some books, and listening to music most of the time (soon I'll be adding some images around here)."
+    }
 }

@@ -5,6 +5,7 @@ import Project from "../components/Project.astro";
 import GitHubIcon from "../components/icons/GitHub.astro";
 import LinkedinIcon from "../components/icons/Linkedin.astro";
 import EmailIcon from "../components/icons/Email.astro";
+import About from "../components/About.astro";
 ---
 
 <Layout title="Portafolio | Juana Solano" description="Programador web">
@@ -33,12 +34,12 @@ import EmailIcon from "../components/icons/Email.astro";
 					<a
 						href="https://www.linkedin.com/in/juana-solano-07686b1b0/"
 					>
-						<LinkedinIcon/>
+						<LinkedinIcon />
 					</a>
 				</li>
 				<li>
 					<a href="mailto:jsolanoenciso199@gmail.com">
-						<EmailIcon/>
+						<EmailIcon />
 					</a>
 				</li>
 			</ul>
@@ -62,7 +63,11 @@ import EmailIcon from "../components/icons/Email.astro";
 					></path></svg
 				>
 			</span>
-			<h2 class="text-3xl font-bold flex justify-right flex-row mb-10" data-section="main" data-value="experienceTitle">
+			<h2
+				class="text-3xl font-bold flex justify-right flex-row mb-10"
+				data-section="main"
+				data-value="experienceTitle"
+			>
 				Experiencia
 			</h2>
 			<Experience />
@@ -86,7 +91,9 @@ import EmailIcon from "../components/icons/Email.astro";
 					>
 				</span>
 				<h2
-					class="text-3xl font-bold flex justify-right flex-row mb-10" data-section="main" data-value="projectTitle"
+					class="text-3xl font-bold flex justify-right flex-row mb-10"
+					data-section="main"
+					data-value="projectTitle"
 				>
 					Proyectos
 				</h2>
@@ -113,9 +120,12 @@ import EmailIcon from "../components/icons/Email.astro";
 					</span>
 					<h2
 						class="text-3xl font-bold flex justify-right flex-row mb-10"
+						data-section="main"
+						data-value="aboutTitle"
 					>
-						Skills
+						Sobre mí
 					</h2>
+					<About />
 				</section>
 			</section>
 		</section>
