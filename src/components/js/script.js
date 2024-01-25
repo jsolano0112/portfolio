@@ -13,7 +13,7 @@ const changeLanguage = async language =>{
         const details = textToChange.dataset.details;
         console.log(section, value);
 
-        if (typeof texts[section] === 'object') {
+        if (details && typeof details === 'string') {
             textToChange.innerHTML = texts[section][value][details];
         } else {
             textToChange.innerHTML = texts[section][value];
