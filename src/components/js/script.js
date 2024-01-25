@@ -1,9 +1,18 @@
 const languageToggle = document.querySelector('#language-toggle');
 
+const textsToChange = document.querySelectorAll('[data-section]');
+
 const changeLanguage = async language =>{
-    const requestJson = await fetch(`../../languages/${language}.json`)
+    const requestJson = await fetch(`./languages/${language}.json`)
     const texts = await requestJson.json()
-    console.log(texts);
+    
+    for(const textToChange of textsToChange){
+        // console.log(textsToChange);
+        const section = textToChange.dataset.section;
+        const value = textToChange.dataset.value;
+        console.log(section, value);
+        textToChange.innerHTML = texts[section][value];
+    }
 };
 
 languageToggle.addEventListener('click', (e)=>{

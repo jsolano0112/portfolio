@@ -2,12 +2,13 @@
     "main": {
         "title": "Portafolio | Juana Solano",
         "hi": "Hola, mi nombre es",
-        "subtitle": "P r o g r a m a d o r   &#160 &#160   W e b",
+        "subtitle": "P r o g r a m a d o r  &#160 &#160  W e b",
         "experienceTitle": "Experiencia",
-        "projectTitle": "Proyectos"
+        "projectTitle": "Proyectos",
+        "contactFooter": "Contacto"
     },
     "experience": {
-        "solvoandvensure": {
+        "solvoAndVensure": {
             "title": "Práctica empresarial",
             "name": "Solvo & Vensure",
             "description": "Trabajé con el equipo de desarrollo de Vensure bajo la metodología Scrum, nuestro principal trabajo fue hacerle un mantenimiento a VensureHR debido a nuevos requerimientos que se le deseaban implementar.",

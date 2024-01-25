@@ -2,81 +2,43 @@
 import Layout from "../layouts/Layout.astro";
 import Experience from "../components/Experience.astro";
 import Project from "../components/Project.astro";
+import GitHubIcon from "../components/icons/GitHub.astro";
+import LinkedinIcon from "../components/icons/Linkedin.astro";
+import EmailIcon from "../components/icons/Email.astro";
 ---
 
 <Layout title="Portafolio | Juana Solano" description="Programador web">
 	<main class="px-8">
 		<section class="w-full lg:w-[700px] mx-auto py-44">
-			<p class="font-semibold">Hola, mi nombre es</p>
+			<p class="font-semibold" data-section="main" data-value="hi">
+				Hola, mi nombre es
+			</p>
 			<h1 class="text-5xl font-bold flex justify-right flex-row">
 				Juana Solano
 			</h1>
-			<p class="font-extralight my-3">
+			<p
+				class="font-extralight my-3"
+				data-section="main"
+				data-value="subtitle"
+			>
 				P r o g r a m a d o r &#160 &#160 W e b
 			</p>
-			<ul class="flex flex-row gap-6">
+			<ul class="flex flex-row gap-6" id="section-contact">
 				<li>
 					<a href="https://github.com/jsolano0112">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="lucide lucide-github"
-							><path
-								d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
-							></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg
-						>
+						<GitHubIcon />
 					</a>
 				</li>
 				<li>
 					<a
 						href="https://www.linkedin.com/in/juana-solano-07686b1b0/"
 					>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="lucide lucide-linkedin"
-							><path
-								d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-							></path><rect width="4" height="12" x="2" y="9"
-							></rect><circle cx="4" cy="4" r="2"></circle></svg
-						>
+						<LinkedinIcon/>
 					</a>
 				</li>
 				<li>
 					<a href="mailto:jsolanoenciso199@gmail.com">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="lucide lucide-mailbox"
-							><path
-								d="M22 17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9.5C2 7 4 5 6.5 5H18c2.2 0 4 1.8 4 4v8Z"
-							></path><polyline points="15,9 18,9 18,11"
-							></polyline><path
-								d="M6.5 5C9 5 11 7 11 9.5V17a2 2 0 0 1-2 2v0"
-							></path><line x1="6" x2="7" y1="10" y2="10"
-							></line></svg
-						>
+						<EmailIcon/>
 					</a>
 				</li>
 			</ul>
@@ -100,7 +62,7 @@ import Project from "../components/Project.astro";
 					></path></svg
 				>
 			</span>
-			<h2 class="text-3xl font-bold flex justify-right flex-row mb-10">
+			<h2 class="text-3xl font-bold flex justify-right flex-row mb-10" data-section="main" data-value="experienceTitle">
 				Experiencia
 			</h2>
 			<Experience />
@@ -124,7 +86,7 @@ import Project from "../components/Project.astro";
 					>
 				</span>
 				<h2
-					class="text-3xl font-bold flex justify-right flex-row mb-10"
+					class="text-3xl font-bold flex justify-right flex-row mb-10" data-section="main" data-value="projectTitle"
 				>
 					Proyectos
 				</h2>
