@@ -23,6 +23,7 @@ const TAGS = {
 
 const PROJECTS = [
    {
+      id: "appControlGastos",
       title: "App Control de Gastos",
       description:
          "Es una aplicación de escritorio para revisar tus gastos del mes, hecha con Java.",
@@ -31,6 +32,7 @@ const PROJECTS = [
       tags: [TAGS.JAVA],
    },
    {
+      id: "gusanito",
       title: "El Gusanito",
       description: "Es una aplicación de escritorio para jugar al gusanito.",
       image: "src/components/img/gusanito.png",
@@ -38,6 +40,7 @@ const PROJECTS = [
       tags: [TAGS.PYTHON],
    },
    {
+      id: "shoppingCart",
       title: "Shopping Cart",
       description: "Es una aplicativo web para agregar artículos al carrito.",
       image: "src/components/img/shop.PNG",
@@ -49,10 +52,11 @@ const PROJECTS = [
 
 <section class="flex flex-col gap-y-16">
    {
-      PROJECTS.map(({ image, title, description, tags, link }) => (
+      PROJECTS.map(({ image, title, description, tags, link, id }) => (
          <article class="section-project">
             <div class="flex flex-row gap-2">
-               <h2 class="text-2xl font-semibold text-black-800 dark:text-black-200 mb-2">
+               <h2 class="text-2xl font-semibold text-black-800 dark:text-black-200 mb-2" data-section="project"
+          data-value={id + ".title"}>
                   {title}
                </h2>
                <a href={link}>
@@ -78,7 +82,8 @@ const PROJECTS = [
                </a>
             </div>
 
-            <p class="text-lg mb-4 text-pretty">{description}</p>
+            <p class="text-lg mb-4 text-pretty" data-section="project"
+          data-value={id + ".description"} >{description}</p>
             <div class="flex flex-row gap-4">
                <img
                   loading="lazy"
