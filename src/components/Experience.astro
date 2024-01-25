@@ -38,14 +38,16 @@ const EXPERIENCIE = [
         <h3
           class="text-lg font-semibold text-black-800 light:text-yellow-200 mt-2"
           data-section="experience"
-          data-value={experience.id + ".title"} 
+          data-value={experience.id} 
+          data-details="title"
         >
           {experience.title}
         </h3>
         <p
           class="mb-4 text-base font-normal light:text-gray-200 text-pretty"
           data-section="experience"
-          data-value={experience.id + ".description"} 
+          data-value={experience.id} 
+          data-details="description"
         >
           {experience.description}
         </p>
@@ -55,7 +57,8 @@ const EXPERIENCIE = [
         <p
           class="mb-4 text-base font-normal light:text-gray-200 text-pretty"
           data-section="experience"
-          data-value={experience.id + ".tech"} 
+          data-value={experience.id} 
+          data-details="tech"
         >
           {experience.tech}
         </p>

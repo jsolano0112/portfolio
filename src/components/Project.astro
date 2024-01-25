@@ -1,7 +1,7 @@
 ---
-import AngularIcon from "./icons/Angular.astro"
-import JavaIcon from "./icons/Java.astro"
-import PythonIcon from "./icons/Python.astro"
+import AngularIcon from "./icons/Angular.astro";
+import JavaIcon from "./icons/Java.astro";
+import PythonIcon from "./icons/Python.astro";
 
 const TAGS = {
    ANGULAR: {
@@ -55,8 +55,12 @@ const PROJECTS = [
       PROJECTS.map(({ image, title, description, tags, link, id }) => (
          <article class="section-project">
             <div class="flex flex-row gap-2">
-               <h2 class="text-2xl font-semibold text-black-800 dark:text-black-200 mb-2" data-section="project"
-          data-value={id + ".title"}>
+               <h2
+                  class="text-2xl font-semibold text-black-800 dark:text-black-200 mb-2"
+                  data-section="project"
+                  data-value={id}
+                  data-details="title"
+               >
                   {title}
                </h2>
                <a href={link}>
@@ -82,8 +86,14 @@ const PROJECTS = [
                </a>
             </div>
 
-            <p class="text-lg mb-4 text-pretty" data-section="project"
-          data-value={id + ".description"} >{description}</p>
+            <p
+               class="text-lg mb-4 text-pretty"
+               data-section="project"
+               data-value={id}
+               data-details="description"
+            >
+               {description}
+            </p>
             <div class="flex flex-row gap-4">
                <img
                   loading="lazy"
