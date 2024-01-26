@@ -7,11 +7,9 @@ const changeLanguage = async language =>{
     const texts = await requestJson.json()
     
     for(const textToChange of textsToChange){
-        // console.log(textsToChange);
         const section = textToChange.dataset.section;
         const value = textToChange.dataset.value;
         const details = textToChange.dataset.details;
-        console.log(section, value);
 
         if (details && typeof details === 'string') {
             textToChange.innerHTML = texts[section][value][details];
