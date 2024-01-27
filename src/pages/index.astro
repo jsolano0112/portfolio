@@ -10,39 +10,48 @@ import About from "../components/About.astro";
 
 <Layout title="Portafolio | Juana Solano" description="Programador web">
 	<main class="px-8">
-		<section class="w-full lg:w-[700px] mx-auto py-44">
-			<p class="font-semibold" data-section="main" data-value="hi">
-				Hola, mi nombre es
-			</p>
-			<h1 class="text-5xl font-bold flex justify-right flex-row">
-				Juana Solano
-			</h1>
-			<p
-				class="font-extralight my-3"
-				data-section="main"
-				data-value="subtitle"
-			>
-				P r o g r a m a d o r &#160 &#160 W e b
-			</p>
-			<ul class="flex flex-row gap-6" id="section-contact">
-				<li>
-					<a href="https://github.com/jsolano0112">
-						<GitHubIcon />
-					</a>
-				</li>
-				<li>
-					<a
-						href="https://www.linkedin.com/in/juana-solano-07686b1b0/"
-					>
-						<LinkedinIcon />
-					</a>
-				</li>
-				<li>
-					<a href="mailto:jsolanoenciso199@gmail.com">
-						<EmailIcon />
-					</a>
-				</li>
-			</ul>
+		<section class="w-full lg:w-[700px] mx-auto py-44 flex flex-col md:flex-row gap-16 items-center mt-0">
+			<div>
+				<p class="font-semibold" data-section="main" data-value="hi">
+					Hola, mi nombre es
+				</p>
+				<h1 class="text-5xl font-bold flex justify-right flex-row">
+					Juana Solano
+				</h1>
+				<p
+					class="font-extralight my-3"
+					data-section="main"
+					data-value="subtitle"
+				>
+					P r o g r a m a d o r &#160 &#160 W e b
+				</p>
+				<ul class="flex flex-row gap-6" id="section-contact">
+					<li>
+						<a href="https://github.com/jsolano0112">
+							<GitHubIcon />
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.linkedin.com/in/juana-solano-07686b1b0/"
+						>
+							<LinkedinIcon />
+						</a>
+					</li>
+					<li>
+						<a href="mailto:jsolanoenciso199@gmail.com">
+							<EmailIcon />
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<img
+					src="./img/photo.png"
+					alt="Juana's photo"
+					class="rounded-full size-30 md:size-80"
+				/>
+			</div>
 		</section>
 		<section class="w-full lg:w-[700px] mx-auto py-44">
 			<span>
