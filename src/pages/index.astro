@@ -10,7 +10,9 @@ import About from "../components/About.astro";
 
 <Layout title="Portafolio | Juana Solano" description="Programador web">
 	<main class="px-8">
-		<section class="w-full lg:w-[700px] mx-auto py-44 flex flex-col md:flex-row gap-16 items-center mt-0">
+		<section
+			class="w-full lg:w-[700px] mx-auto py-28 md:py-36 flex flex-col md:flex-row justify-between items-center mt-0"
+		>
 			<div>
 				<p class="font-semibold" data-section="main" data-value="hi">
 					Hola, mi nombre es
@@ -80,63 +82,62 @@ import About from "../components/About.astro";
 				Experiencia
 			</h2>
 			<Experience />
-			<section class="w-full lg:w-[700px] mx-auto py-44">
-				<span>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						class="lucide lucide-briefcase"
-						><rect width="20" height="14" x="2" y="7" rx="2" ry="2"
-						></rect><path
-							d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"
-						></path></svg
-					>
-				</span>
-				<h2
-					class="text-3xl font-bold flex justify-right flex-row mb-10"
-					data-section="main"
-					data-value="projectTitle"
+		</section>
+		<section class="w-full lg:w-[700px] mx-auto py-44">
+			<span>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="lucide lucide-briefcase"
+					><rect width="20" height="14" x="2" y="7" rx="2" ry="2"
+					></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"
+					></path></svg
 				>
-					Proyectos
-				</h2>
-				<Project />
-				<section class="w-full lg:w-[700px] mx-auto py-44">
-					<span>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="lucide lucide-brush"
-							><path
-								d="m9.06 11.9 8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08"
-							></path><path
-								d="M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z"
-							></path></svg
-						>
-					</span>
-					<h2
-						class="text-3xl font-bold flex justify-right flex-row mb-10"
-						data-section="main"
-						data-value="aboutTitle"
-					>
-						Sobre mí
-					</h2>
-					<About />
-				</section>
-			</section>
+			</span>
+			<h2
+				class="text-3xl font-bold flex justify-right flex-row mb-10"
+				data-section="main"
+				data-value="projectTitle"
+			>
+				Proyectos
+			</h2>
+			<Project />
+		</section>
+		<section class="w-full lg:w-[700px] mx-auto py-44">
+			<span>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="lucide lucide-brush"
+					><path
+						d="m9.06 11.9 8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08"
+					></path><path
+						d="M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z"
+					></path></svg
+				>
+			</span>
+			<h2
+				class="text-3xl font-bold flex justify-right flex-row mb-10"
+				data-section="main"
+				data-value="aboutTitle"
+			>
+				Sobre mí
+			</h2>
+			<About />
 		</section>
 	</main>
 </Layout>
